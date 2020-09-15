@@ -1,0 +1,533 @@
+/* ====================================================
+  Template Name: HTML5 landing page
+  Template URI: https://asifjalil.xyz
+  Description: HTML5 landing page
+  Author: Asif
+  Author URI: https://asifjalil.xyz/
+  version: 1.0
+==================================================== */
+
+/* CSS Index
+------------------------------------
+
+01. Template Default CSS 
+02. header css
+
+
+
+
+
+
+*/
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+/* ..................................
+ 01. Template Default CSS 
+.................................. */
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-out 0s;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  border: none;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+/* ..................................
+ 02. header css 
+.................................. */
+
+/* rgb(255, 87, 34) */
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  padding: 0 30px;
+  transition: 0.3s;
+  z-index: 99;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.logo svg {
+  animation: logoSwing 1.7s infinite;
+  -webkit-animation: logoSwing 1.7s infinite;
+}
+
+@keyframes logoSwing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  35% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  65% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.main-menu li,
+.login a {
+  color: #5a5a5a;
+  font-size: 15px;
+  text-transform: capitalize;
+  margin: 0 15px;
+  position: relative;
+}
+
+
+.main-menu li:before,
+.login a:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 2px;
+  border-radius: 5px;
+  background: #ff5722;
+  transition: 0.3s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: ;
+  -moz-transition: ;
+  -ms-transition: ;
+  -o-transition: ;
+}
+
+.main-menu li:hover,
+.login a:hover {
+  color: #ff5722;
+}
+
+.main-menu li:hover:before,
+.login a:hover:before {
+  width: 70%;
+}
+
+.login a {
+  margin: 0;
+}
+
+.sec-pad-top {
+  padding-top: 120px;
+}
+
+.sec-pad-bottom {
+  padding-bottom: 120px;
+}
+
+
+/* ..................................
+ 01. home CSS 
+.................................. */
+.home {
+  height: 550px;
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.nice-select {
+  display: inline-block;
+  float: none;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 0;
+  color: #5a5a5a;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.nice-select.open .list {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.nice-select .option {
+  display: block;
+}
+
+.nice-select .option:hover {
+  background: #ff5722;
+  color: #fff;
+}
+
+.nice-select .option.disabled:hover {
+  color: #999;
+}
+
+.home-search .days {
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  border: none;
+  outline: none;
+  transform: translateY(-1px);
+  padding: 0 15px;
+}
+
+.home-search .days::placeholder {
+  color: #5a5a5a;
+}
+
+
+.home-btn {
+  background: #ff5722;
+  color: #fff;
+  font-size: 15px;
+  width: 100px;
+  height: 36px;
+  position: relative;
+  transition: 0.3s;
+  transform: translateY(-1px);
+  -webkit-transform: translateY(-1px);
+  -moz-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  -o-transform: translateY(-1px);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.home-btn:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.13);
+  z-index: -1;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.home-btn:hover:before {
+  width: 100%;
+}
+
+
+/* ..................................
+ 01. package CSS
+.................................. */
+.package-head {
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.package-head h3 {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+.fs-area {
+  display: flex;
+}
+
+.sort-menu li {
+  display: inline-block;
+  width: 70px;
+  height: 28px;
+  line-height: 28px;
+  background: #ff5722;
+  color: #fff;
+  text-align: center;
+  margin: 0 8px;
+}
+
+.filter-menu>li {
+  width: 70px;
+  height: 28px;
+  line-height: 28px;
+  background: #ff5722;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin-left: 8px;
+}
+
+.filter-menu .filter-sub-menu {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 90px;
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  z-index: 9;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.filter-menu>li:hover .filter-sub-menu {
+  top: 28px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.filter-sub-menu li {
+  text-align: left;
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  color: #000;
+}
+
+.filter-sub-menu li:hover {
+  background: #ff5722;
+  color: #fff;
+}
+
+.single-package {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.single-package:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.single-package:hover:before {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+.single-package img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.single-package:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.package-title {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  color: #fff;
+  font-size: 24px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.single-package:hover .package-title {
+  transform: translateY(-65px);
+  -webkit-transform: translateY(-65px);
+  -moz-transform: translateY(-65px);
+  -ms-transform: translateY(-65px);
+  -o-transform: translateY(-65px);
+}
+
+.hover-content {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  transition: 0.3s;
+  transform: translateY(110px);
+  -webkit-transform: translateY(110px);
+  -moz-transform: translateY(110px);
+  -ms-transform: translateY(110px);
+  -o-transform: translateY(110px);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.single-package:hover .hover-content {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.6s;
+}
+
+.hover-content p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  color: #fff;
+
+}
+
+.hover-content .review i {
+  color: #ff9d26;
+  font-size: 11px;
+}
+
+.hover-content .review span {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* ..................................
+ 01. footer CSS 
+.................................. */

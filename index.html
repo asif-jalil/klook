@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- title here -->
+  <title>Assesment Task</title>
+
+  <!-- favicon here -->
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+
+  <!-- all CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <!-- header area start -->
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <div class="logo">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="93" height="24" viewBox="0 0 93 24">
+                <g id="logo-en" fill="#FF5722">
+                  <path
+                    d="M61.8285714,0 C61.7142857,0 61.7142857,0 61.8285714,0 C57.4857143,0 53.8285714,2.17142857 51.7714286,5.48571429 C49.6,2.17142857 45.8285714,0 41.6,0 C41.6,0 41.4857143,0 41.4857143,0 C34.8571429,0 29.4857143,5.48571429 29.6,12.1142857 C29.6,18.7428571 34.9714286,24 41.6,24 C41.6,24 41.7142857,24 41.7142857,24 C45.9428571,24 49.6,21.8285714 51.7714286,18.5142857 C53.9428571,21.8285714 57.6,24 61.8285714,24 C61.8285714,24 61.9428571,24 61.9428571,24 C68.5714286,24 73.9428571,18.5142857 73.8285714,11.8857143 C73.7142857,5.37142857 68.3428571,0 61.8285714,0 Z M41.6,20.2285714 L41.6,20.2285714 C39.3142857,20.2285714 37.2571429,19.4285714 35.7714286,17.8285714 C34.1714286,16.3428571 33.3714286,14.2857143 33.3714286,12.1142857 C33.3714286,9.94285714 34.1714286,7.88571429 35.7714286,6.28571429 C37.2571429,4.68571429 39.3142857,3.88571429 41.6,3.88571429 L41.7142857,3.88571429 L41.7142857,3.88571429 L41.7142857,3.88571429 C43.8857143,3.88571429 45.9428571,4.68571429 47.5428571,6.28571429 C49.1428571,7.77142857 49.9428571,9.82857143 49.9428571,12 C49.8285714,16.4571429 46.1714286,20.2285714 41.6,20.2285714 Z M61.8285714,20.2285714 L61.8285714,20.2285714 C59.5428571,20.2285714 57.4857143,19.4285714 56,17.8285714 C54.4,16.3428571 53.6,14.2857143 53.6,12.1142857 C53.6,9.94285714 54.4,7.88571429 56,6.28571429 C57.4857143,4.68571429 59.5428571,3.88571429 61.8285714,3.88571429 L61.7142857,3.88571429 L61.7142857,3.88571429 L61.7142857,3.88571429 C63.8857143,3.88571429 65.9428571,4.68571429 67.5428571,6.28571429 C69.1428571,7.77142857 69.9428571,9.82857143 69.9428571,12 C70.0571429,16.4571429 66.4,20.2285714 61.8285714,20.2285714 Z M0,0 L0,24 C2.05714286,24 3.77142857,22.2857143 3.77142857,20.2285714 L3.77142857,3.77142857 C3.77142857,1.71428571 2.05714286,0 0,0 Z"
+                    class="logo-en-fill"></path>
+                  <path
+                    d="M29.0285714,20.2285714 L24.3428571,20.2285714 L24.3428571,3.77142857 C24.3428571,1.71428571 22.6285714,0 20.5714286,0 L20.5714286,0 L20.5714286,24 L24.3428571,24 L24.3428571,24 L32.8,24 L32.8,24 C32.8,21.9428571 31.2,20.2285714 29.0285714,20.2285714 Z M75.3142857,0 L75.3142857,0 L75.3142857,24 L75.3142857,24 C77.3714286,24 79.0857143,22.2857143 79.0857143,20.2285714 L79.0857143,3.77142857 C79.0857143,1.71428571 77.3714286,0 75.3142857,0 Z M91.6571429,18.6285714 L85.0285714,12 L91.6571429,5.37142857 C93.1428571,3.88571429 93.1428571,1.48571429 91.6571429,0 L79.6571429,12 L91.6571429,24 L91.6571429,24 C93.1428571,22.5142857 93.1428571,20.1142857 91.6571429,18.6285714 Z M9.71428571,12 L16.3428571,5.37142857 C17.8285714,3.88571429 17.8285714,1.48571429 16.3428571,0 L4.45714286,12 L16.4571429,24 L16.4571429,24 C17.9428571,22.5142857 17.9428571,20.1142857 16.4571429,18.6285714 L9.71428571,12 Z"
+                    class="logo-en-fill"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div> <!-- col end -->
+
+        <div class="col-md-6 col-6  text-md-center d-flex f-md-block">
+          <div class="toggle-open d-block d-md-none ml-auto">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="main-menu">
+            <li><a href="#">package</a></li>
+            <li><a href="#">destinations</a></li>
+            <li><a href="#">blog</a></li>
+            <li class="d-block d-md-none"><a href="#">Login/Register</a></li>
+            <div class="toggle-close d-block d-md-none">
+              <i class="fas fa-times"></i>
+            </div>
+          </ul>
+        </div> <!-- col end -->
+
+        <div class="col-md-3 d-none d-md-block text-right">
+          <div class="login">
+            <a href="#">Login/Register</a>
+          </div>
+        </div> <!-- col end -->
+      </div> <!-- row end -->
+    </div> <!-- container end -->
+  </header>
+  <!-- header area end -->
+
+  <!-- home area start -->
+  <section id="home" class="home">
+    <div class="contaienr">
+      <div class="home-content">
+        <h1>Explore the world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sit!</p>
+        <div class="home-search">
+          <form>
+            <select class="category">
+              <option data-display="Travel Category" disabled selected>Choose One</option>
+              <option value="Ticket">Ticket</option>
+              <option value="Hotel">Hotel</option>
+              <option value="Food">Food</option>
+              <option value="Transport">Transport</option>
+            </select>
+
+            <select class="place">
+              <option data-display="Place" disabled selected>Choose One</option>
+              <option value="Hong-Kong">Hong Kong</option>
+              <option value="Singapur">Singapur</option>
+              <option value="Yilan">Yilan</option>
+              <option value="Bangkok">Bangkok</option>
+            </select>
+
+            <input type="text" class="days" placeholder="Days">
+
+            <button class="button home-btn">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- home area end -->
+
+  <!-- package area start -->
+  <section id="package" class="package sec-pad-bottom sec-pad-top">
+    <div class="container">
+      <div class="package-head">
+        <h3>Travelling Package</h3>
+        <div class="fs-area">
+          <ul class="sort-menu">
+            <li data-sort-by="original-order">Original</li>
+            <li data-sort-by="days">Days</li>
+            <li data-sort-by="budget">Budget</li>
+          </ul>
+          <ul class="filter-menu">
+            <li>Filter
+              <ul class="filter-sub-menu">
+                <li data-filter="*">All</li>
+                <li data-filter=".asia">Asia</li>
+                <li data-filter=".europe">Europe</li>
+                <li data-filter=".america">America</li>
+                <li data-filter=".africa">Africa</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row isotope-grid">
+        <div class="col-lg-3 col-md-4 col-sm-6 isotope-item asia wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.3s">
+          <div class="single-package mb-30">
+            <img src="img/spot/1.png" alt="spot" class="img-fluid">
+            <h4 class="package-title">Taipei</h4>
+            <div class="hover-content">
+              <p>Day - 9 | Budget - 1000$</p>
+              <p class="sr-only days">9</p>
+              <p class="sr-only budget">1000</p>
+              <div class="review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(1029 Reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 isotope-item europe wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.5s">
+          <div class="single-package mb-30">
+            <img src="img/spot/2.png" alt="spot" class="img-fluid">
+            <h4 class="package-title">Bangkok</h4>
+            <div class="hover-content">
+              <p>Day - 7 | Budget - 400$</p>
+              <p class="sr-only days">7</p>
+              <p class="sr-only budget">400</p>
+              <div class="review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(1029 Reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 isotope-item asia wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">
+          <div class="single-package mb-30">
+            <img src="img/spot/3.png" alt="spot" class="img-fluid">
+            <h4 class="package-title">Hualien</h4>
+            <div class="hover-content">
+              <p>Day - 4 | Budget - 300$</p>
+              <p class="sr-only days">4</p>
+              <p class="sr-only budget">300</p>
+              <div class="review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(1029 Reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 isotope-item america wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.9s">
+          <div class="single-package mb-30">
+            <img src="img/spot/4.png" alt="spot" class="img-fluid">
+            <h4 class="package-title">Singapur</h4>
+            <div class="hover-content">
+              <p>Day - 8 | Budget - 700$</p>
+              <p class="sr-only days">8</p>
+              <p class="sr-only budget">700</p>
+              <div class="review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(1029 Reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 isotope-item africa wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.3s">
+          <div class="single-package mb-30">
+            <img src="img/spot/5.png" alt="spot" class="img-fluid">
+            <h4 class="package-title">Penghu</h4>
+            <div class="hover-content">
+              <p>Day - 5 | Budget - 400$</p>
+              <p class="sr-only days">5</p>
+              <p class="sr-only budget">400</p>
+              <div class="review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(1029 Reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 isotope-item america wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.5s">
+          <div class="single-package mb-30">
+            <img src="img/spot/6.png" alt="spot" class="img-fluid">
+            <h4 class="package-title">Hong Kong</h4>
+            <div class="hover-content">
+              <p>Day - 3 | Budget - 250$</p>
+              <p class="sr-only days">3</p>
+              <p class="sr-only budget">250</p>
+              <div class="review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(1029 Reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 isotope-item europe wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">
+          <div class="single-package mb-30">
+            <img src="img/spot/7.png" alt="spot" class="img-fluid">
+            <h4 class="package-title">Yilen</h4>
+            <div class="hover-content">
+              <p>Day - 4 | Budget - 500$</p>
+              <p class="sr-only days">4</p>
+              <p class="sr-only budget">500</p>
+              <div class="review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(1029 Reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 isotope-item africa wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.9s">
+          <div class="single-package mb-30">
+            <img src="img/spot/8.png" alt="spot" class="img-fluid">
+            <h4 class="package-title">Kualalampur</h4>
+            <div class="hover-content">
+              <p>Day - 10 | Budget - 1200$</p>
+              <p class="sr-only days">10</p>
+              <p class="sr-only budget">1200</p>
+              <div class="review">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(1029 Reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- package area end -->
+
+
+
+
+
+
+
+
+
+
+  <!-- jQuery JS -->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+
+  <!-- bootstrap JS -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- nice select -->
+  <script src="js/jquery.nice-select.min.js"></script>
+
+  <!-- isotope js -->
+  <script src="js/isotope.pkgd.min.js"></script>
+
+  <!-- isotope js -->
+  <script src="js/wow.min.js"></script>
+
+
+  <!-- main JS -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
